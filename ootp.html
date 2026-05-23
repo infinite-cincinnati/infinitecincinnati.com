@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<html lang="en">
+<head>
+
+    <title>Infinite Cincinnati</title>
+    <meta charset="utf-8" />
+
+    <!--
+    CSS styles
+    -->
+    <link href="/theme/css/fonts.css" rel="stylesheet" type="text/css">
+
+    <link href="/theme/css/slate.css"  rel="stylesheet" type="text/css">
+    <link href="/theme/css/custom.css" rel="stylesheet" type="text/css">
+    <link href="/theme/css/infinite.css" rel="stylesheet" type="text/css">
+
+    <!--
+    <link rel="icon" type="image/png" href="/theme/img/infinite-cleveland-favicon.png">
+    -->
+
+    <!--
+        Versions:
+        infinite-cleveland-pelican: 0.1.0
+        infinite-cleveland-pelican-theme: 0.1.0
+    -->
+
+
+</head>
+<body id="index">
+
+<header id="blog-header" class="has-cover">
+  <div class="inner">
+    <h1 class="blog-name"><a href="/">Infinite Cincinnati</a></h1>
+  </div>
+  <div class="blog-cover cover" style="background-image: url('/img/cin.png')">
+  </div>
+</header>
+
+
+<div id="article-div-container" class="container">
+  <div id="article-div-row" class="row">
+    <div id="article-div-col12" class="col-md-12">
+      <h1>Out of the Park Baseball Simulator</h1>
+<p><a href="https://www.ootpdevelopments.com/out-of-the-park-baseball-home/">Out of the Park Baseball Simulator homepage (link)</a></p>
+<h2>Overview</h2>
+<p><a href="https://www.ootpdevelopments.com/out-of-the-park-baseball-home/">Out of the Park Baseball (OOTP)</a>
+is a computer game that lets you simulate baseball leagues and teams.
+The game can simulate everything from multiple seasons of hundreds
+of games between dozens of teams, all the way down to interactively
+simulating games and making managerial decisions like which pitches
+should be thrown or when batters should swing.</p>
+<p>The game is extremely flexible, with an array of adjustable
+parameters, and the ability to either micromanage, or to allow the
+computer to run simulations using its best judgement. The simulator
+is also programmed
+with a wide variety of managerial strategies from different baseball
+eras, and even the automatic decision-making is easily customized.</p>
+<p>The program also offers a suite of tools for importing and exporting
+data from a variety of formats and for a variety of uses, ranging from
+raw data in CSV format, to pre-formatted HTML pages and stylesheets.
+This proved invaluable for assembling Infinite Cincinnati timelines.</p>
+<h2>Infinite Cincinnati Exhibition Games</h2>
+<p>OOTP has several simulation modes.
+To generate alternate timelines for the Infinite Cincinnati project, we used
+OOTP in Exhibition Mode, which is a way of simulating a single playoffs game,
+series, or bracket.  (Infinite Cincinnati is just scratching the surface of
+the different ways of dipping into the pool of infinite timelines.)</p>
+<p>We set the roster to 17 players, to match the number of
+players that were on the field during the real Game 4.
+The remaining players are benched, to ensure realistic
+rotations during the games (for example, not having the
+Game 5 starters come into the game to pitch in relief).</p>
+<p><img alt="Screenshot of OOTP setup for exhibition match between 1972 World Series teams." src="/img/ootp1.png"></p>
+<p><img alt="Screenshot of OOTP setup for Infinite Cincinnati exhibition matches." src="/img/ootp2.png"></p>
+<h2>Infinite Cincinnati Roster Setup</h2>
+<p>The rosters were set up so that only players appearing in Game 4 were on the
+active roster, and the lineups were rearranged so that each player was batting
+in the same lineup spot as Game 4, and playing in the correct position for Game 4.</p>
+<p>Once the roster is set up, the game state can be frozen, and copies can be made
+of the frozen game state whenever we want to generate a new simulation/timeline.</p>
+<p>We obtained the roster of players used in Game 4 of the 1972 World Series
+from <a href="https://www.baseball-reference.com/boxes/OAK/OAK197210190.shtml">baseball-reference.com (link)</a>.</p>
+<p><strong>Rosters Tab:</strong></p>
+<p>Players that were in Game 4 were moved to the left side (active roster),
+while players that were not in Game 4 were moved to the right side
+(reserve roster).</p>
+<p>Here is the roster from baseball-reference.com:</p>
+<p><img alt="Screenshot of baseball-reference.com Oakland Athletics lineup for 1972 World Series Game 4." src="/img/baseballreference1.png"></p>
+<p>Here is a screenshot of the Oakland Athletics roster with Game 4 players active:</p>
+<p><img alt="Screenshot of OOTP roster for 1972 Oakland Athletics in World Series Game 4." src="/img/ootp3.png"></p>
+<p><strong>Lineups Tab:</strong></p>
+<p>The Lineups tab is where players are arranged in the correct batting order
+and set up to start at the correct position.</p>
+<p>The starting pitchers are set (Ken Holtzman for the Athletics, Don Gullett for the Reds),
+and each team has a 1-man pitching rotation so all other pitchers are in the bullpen.</p>
+<p>Next, the batting lineup is set up in the correct order by dragging and dropping players.
+Here is a screenshot of the completed batting lineup for the Oakland Athletics:</p>
+<p><img alt="Screenshot of OOTP lineup for 1972 Oakland Athletics in World Series Game 4." src="/img/ootp4.png"></p>
+<p><strong>Play Ball! Tab:</strong></p>
+<p>Once the lineups are set, the Play Ball! tab shows two green buttons:
+"Play" (watch the game as it is simulated) or "Simulate" (get an instantaneous
+simulation).</p>
+<p>Clicking "Return to OOTP Main Screen" without clicking either "Play" or "Simulate" will
+automatically save the game state; no lineups or rosters are lost. Confirm that's the case
+by loading a saved game on the OOTP Main Screen. The exhibition match just set up should be
+called "HistoricalExhibition".</p>
+<h2>Copying a Saved Game</h2>
+<p>Once the clean, unsimulated version of the Game 4 matchup has been saved, locate
+and stash a copy of the clean, unsimulated version. Then make copies of it to create
+new simulations/timelines.</p>
+<p>Start by locating the directory where OOTP stores application data; it should be listed
+somewhere in the game's Settings panel. On Mac, the application data directory is here:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>open<span class="w"> </span><span class="s2">&quot;/Users/&lt;username&gt;/Library/Application Support/Out of the Park Developments/OOTP Baseball 20&quot;</span>
+</code></pre></div>
+
+<p>The directory <code>saved_games</code> contains the saved games, which are contained in folders with an
+<code>.lg</code> extension. The game created above should be called <code>HistoricalExhibition.lg</code>.</p>
+<p>There is also a <code>saved_games.dat</code> file, which contains references to all saved games.</p>
+<p>The <code>saved_games.dat</code> file must be consistent with the saved games that are present, and will complain
+if a saved game has been removed. However, if the file is deleted, OOTP will automatically detect that,
+find saved games, and regenerate a <code>saved_games.dat</code> file using the games it finds.</p>
+<h2>Procedure to Create New Game from Saved Game</h2>
+<ul>
+<li>Remove or rename <code>saved_games</code> directory, if it exists</li>
+<li>Create a new, empty directory named <code>saved_games</code> in the OOTP data directory</li>
+<li>Copy <code>HistoricalExhibition.lg</code> (the clean, unsimulated game) into the new, empty <code>saved_games</code> directory</li>
+<li>Start up OOTP Baseball Simulator; this will automatically create a <code>saved_games.dat</code> file</li>
+<li>Click "Load Game" and load up your clean, unsimulated exhibition game with correct rosters and lineups.</li>
+<li>Click "Play" or "Simulate" to create a new simulation/timeline</li>
+<li>Save the game and exit OOTP</li>
+<li>Move the game <code>HistoricalExhibition.lg</code> to a directory of simulated games, for further processing</li>
+</ul>
+<p>With some practice, it only takes a minute or two to run the above steps
+and generate a new Infinite Cincinnati timeline.</p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="/theme/js/jquery.min.js"></script>
+<script type="text/javascript" src="/theme/js/bootstrap.bundle.min.js"></script>
+
+<footer id="contentinfo" class="body">
+    <div class="text-center">
+        <p>Proud component of the <a href="https://twitter.com/CatStlats/status/1447715302154899459">baseball to blaseball to baseball pipeline</a>.</p>
+        <p>Created at the Metablaseball Research Laboratory at Hellmouth Community College.</p>
+        <p>Author: <a href="https://twitter.com/ch4zm_of_hell">Ch4zm of Hellmouth</a></p> 
+        <p>Licensed under the <a rel="license" href="https://mit-license.org/">MIT License</a></p>
+    </div>
+</footer>
+</body>
+</html>
